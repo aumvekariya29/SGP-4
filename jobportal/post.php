@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -5,7 +7,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width-device-width, initial-scale=1.0">
-    <title>View Job</title>
+    <title>Contact</title>
     <!-- custom CSS file link -->
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -21,9 +23,7 @@
             <div id="menu-btn" class="fas fa-bars-staggered"></div>
 
             <!-- <a href="home.html" class="logo"><i class="fas fa-briefcase"></i>JobHunt.</a> -->
-            <a href="home.html"> <img src="./images/logo1.png" class="logo"></a>
-
-
+            <a href="home.html"> <img src="images/logo1.png" class="logo"></a>
 
 
             <nav class="navbar">
@@ -41,67 +41,56 @@
         </section>
     </header>
 
-    <!-- View jobs section starts -->
+    <!-- Contact section starts -->
+    <div class="section-title">Post job</div>
 
-    <section class="job-details">
-        <h1 class="heading">job details</h1>
+    <section class="contact">
 
-        <div class="details" >
-            <div class="job-info">
-                <h3>Senior web designer</h3>
-                <a href="view_company.html">IT infosys co.</a>
-                <p><i class="fas fa-map-marker-alt"></i> mumbai, india</p>
+        <form action="insertPostData.php" method="post">
+            <h3>drop your message</h3>
+            <div class="flex">
+                <div class="box">
+                    <p>name <span>*</span></p>
+                    <input type="text" required name="name" id="name" maxlength="20" placeholder="enter your name"
+                        class="input">
+                </div>
+                <div class="box">
+                    <p>email <span>*</span></p>
+                    <input type="email" required name="email" id="email" maxlength="50" placeholder="enter your email"
+                        class="input">
+                </div>
+                <div class="box">
+                    <p>number <span>*</span></p>
+                    <input type="number" required name="number" id="number" min="0" max="9999999999" maxlength="20"
+                        placeholder="enter your number" class="input">
+                </div>
+                <div class="box">
+                    <p>company <span>*</span></p>
+                    <input type="text" required name="company" id="company" maxlength="20"
+                        placeholder="enter your company" class="input">
+                </div>
+                <div class="box">
+                    <p>job title <span>*</span></p>
+                    <input type="text" required name="jobtitle" id="jobtitle" maxlength="20"
+                        placeholder="enter your Job title" class="input">
+                </div>
+                <div class="box">
+                    <p>role <span>*</span></p> <select required name="role" class="input">
+                        <option value="employee">job seeker (employee)</option>
+                        <option value="employeer">job provider (employeer)</option>
+                    </select>
+                </div>
+                <div class="box">
+                    <p>address <span>*</span></p>
+                    <input type="text" required name="address" id="address" maxlength="50"
+                        placeholder="enter your Address" cols="30" rows="2" class="input">
+                </div>
             </div>
-
-            <div class="basic-details">
-                <h3>salary</h3>
-                <p>10000 - 25000 per month</p>
-                <h3>benefits</h3>
-                <p>work from home, health insurance</p>
-                <h3>job type</h3>
-                <p>part-time</p>
-                <h3>schedule</h3>
-                <p>day shift</p>
-            </div>
-            <ul>
-                <h3>requirements</h3>
-                <li>education : <span>graduate</span></li>
-                <li>age : <span>25+</span></li>
-                <li>language : <span>hindi, english</span></li>
-                <li>experience : <span>3+ years</span></li>
-            </ul>
-            <ul>
-                <h3>qualifications</h3>
-                <li>Bachelor's (Preferred)</li>
-                <li>PHP : 1 year (Preferred)</li>
-                <li>web design : 1 year (Preferred)</li>
-                <li>WordPress : 1 year (Preferred)</li>
-                <li>total work : 3 years (Required)</li>
-            </ul>
-            <ul>
-                <h3>skills</h3>
-                <li>html5 and css3</li>
-                <li>javascript</li>
-                <li>node.js</li>
-                <li>react.js</li>
-                <li>php</li>
-                <li>mysql</li>
-            </ul>
-            <div class="description">
-                <h3>job description</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt voluptas architecto vel atque
-                    dolores deserunt explicabo dolo Pull up for p Mollitia, qui delectus.</p>
-                <ul>
-                    <li>Hiring 2 candidate for this role</li>
-                    <li>posted 2 days ago</li>
-                </ul>
-            </div>
-            <form action="" method="post" class="flex-btn"> 
-                <input type="submit" value="apply now" name="apply" class="btn"> 
-                <button type="submit" class="save"><i class="far fa-heart"></i><span>save job</span></button> 
-            </form>
-        </div>
-
+            <p>job description <span>*</span></p>
+            <textarea name="jobdescription" id="jobdescription" required class="input" maxlength="1000"
+                placeholder="Enter your job description" cols="30" rows="10"></textarea>
+            <button type="submit" value="submit" name="jay" class="btn">submit</button>
+        </form>
     </section>
 
 

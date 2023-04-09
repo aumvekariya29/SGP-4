@@ -23,8 +23,9 @@
             <div id="menu-btn" class="fas fa-bars-staggered"></div>
 
             <!-- <a href="home.html" class="logo"><i class="fas fa-briefcase"></i>JobHunt.</a> -->
-            <a href="home.html"> <img src="/images/logo1.png" class="logo"></a>
-
+            <a href="home.html"> <img src="images/logo1.png"
+                class="logo"></a>
+                
             <nav class="navbar">
                 <a href="home.html">home</a>
                 <a href="about.html">about us</a>
@@ -55,7 +56,7 @@
                 </div>
                 <div class="box">
                     <p>Job Location </p>
-                    <input type="text" name="location" placeholder="city, state or country" required maxlength="50"
+                    <input type="text" id="title2" name="location" placeholder="city, state or country" required maxlength="50"
                         class="input">
                 </div>
 
@@ -144,7 +145,7 @@
                     </div>
                 </div>
                 <h3 class="job-title">senior web developer</h3>
-                <p class="location"><i class="fas fa-map-marker-alt"></i>
+                <p class="location" id="job1"><i class="fas fa-map-marker-alt"></i>
                     <span>mumbai, india</span>
                 </p>
                 <div class="tags">
@@ -166,7 +167,7 @@
                     </div>
                 </div>
                 <h3 class="job-title">qualified developer</h3>
-                <p class="location"><i class="fas fa-map-marker-alt"></i> <span>mumbai, india</span></p>
+                <p class="location"><i class="fas fa-map-marker-alt"></i> <span>Delhi, india</span></p>
                 <div class="tags">
                     <p><i class="fas fa-indian-rupee-sign"></i> <span>9000</span></p>
                     <p><i class="fas fa-briefcase"></i> <span>full-time</span></p>
@@ -223,7 +224,7 @@
                     </div>
                 </div>
                 <h3 class="job-title">junior assistant</h3>
-                <p class="location"><i class="fas fa-map-marker-alt"></i> <span>mumbai, india</span></p>
+                <p class="location"><i class="fas fa-map-marker-alt"></i> <span>Chennai, india</span></p>
                 <div class="tags">
                     <p><i class="fas fa-indian-rupee-sign"></i> <span>5000</span></p>
                     <p><i class="fas fa-briefcase"></i> <span>temperary</span></p>
@@ -264,7 +265,7 @@
                     </div>
                 </div>
                 <h3 class="job-title">junior Assistant</h3>
-                <p class="location"><i class="fas fa-map-marker-alt"></i> <span>mumbai, india</span></p>
+                <p class="location"><i class="fas fa-map-marker-alt"></i> <span>Surat, india</span></p>
                 <div class="tags">
                     <p><i class="fas fa-indian-rupee-sign"></i> <span>20k - 25k</span></p>
                     <p><i class="fas fa-briefcase"></i> <span>temporary</span></p>
@@ -426,6 +427,53 @@
         });
      }); 
     </script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+           $("#title2").on("keyup",function(){
+                var value = $(this).val().toLowerCase();
+               //   $("#job_container h3").filter(function () {
+               //     $(this).toggle($(this).text().toLowerCase().indexOf(
+               //         value) > -1); 
+                       $("#box1").filter(function () {
+                   $(this).toggle($(this).text().toLowerCase().indexOf(
+                       value) > -1); 
+                       });
+                       $("#box2").filter(function () {
+                   $(this).toggle($(this).text().toLowerCase().indexOf(
+                       value) > -1); 
+                       });
+                       $("#box3").filter(function () {
+                   $(this).toggle($(this).text().toLowerCase().indexOf(
+                       value) > -1); 
+                       });
+                       $("#box4").filter(function () {
+                   $(this).toggle($(this).text().toLowerCase().indexOf(
+                       value) > -1); 
+                       });
+                       $("#box5").filter(function () {
+                   $(this).toggle($(this).text().toLowerCase().indexOf(
+                       value) > -1); 
+                       });
+                       $("#box6").filter(function () {
+                   $(this).toggle($(this).text().toLowerCase().indexOf(
+                       value) > -1); 
+                       });
+                       $("#box7").filter(function () {
+                   $(this).toggle($(this).text().toLowerCase().indexOf(
+                       value) > -1); 
+                       });
+                       $("#box8").filter(function () {
+                   $(this).toggle($(this).text().toLowerCase().indexOf(
+                       value) > -1); 
+                       });
+                       $("#box9").filter(function () {
+                   $(this).toggle($(this).text().toLowerCase().indexOf(
+                       value) > -1); 
+                       });
+               
+           });
+        }); 
+       </script>
 </body>
 
 </html>

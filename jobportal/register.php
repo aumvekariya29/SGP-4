@@ -108,7 +108,7 @@ if (isset($_POST['submit'])) {
                 <input type="email" required name="email" id="email"maxlength="50" placeholder="enter your email" class="input">
                 <input type="password" required name="pass" maxlength="20" id="pass" placeholder="enter your password"
                     class="input">
-                <input type="confirm password" required name="c_pass" id="c_pass" maxlength="20" placeholder="confirm your password"
+                <input type="password" required name="c_pass" id="c_pass" maxlength="20" placeholder="confirm your password"
                     class="input">
                 <p>already have an account? <a href="login.html">login now</a></p> <button type="submit"
                     value="register now" name="submit" class="btn">done</button>
@@ -118,7 +118,7 @@ if (isset($_POST['submit'])) {
 
 
     <!-- footer section starts -->
-    <!-- <footer class="footer">
+    <footer class="footer">
         <section class="grid">
             <div class="box">
                 <h3>quick links</h3>
@@ -150,7 +150,7 @@ if (isset($_POST['submit'])) {
             </div>
         </section>
         <div class="credit">&copy; copyright @2023 | All rights reserved </div>
-    </footer> -->
+    </footer>
 
 
 
@@ -164,7 +164,7 @@ if (isset($_POST['submit'])) {
 
 
     <!-- external js link  -->
-    <!-- <script src="js/script.js"></script> -->
+    <script src="js/script.js"></script>
 
 </body>
 

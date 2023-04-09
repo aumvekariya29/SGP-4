@@ -11,17 +11,17 @@ if (isset($_POST['submit'])) {
 
     $email = $_POST['email'];
     $pass = $_POST['pass'];
-    
+
     $insert = "INSERT INTO user_login ( email, password) VALUES('$email','$pass')";
     $reg = mysqli_query($conn, $insert);
 
-            if($reg==1){
-            header("location:home.html");
+    if ($reg == 1) {
+        // header("location:home.html");
+        echo "asd";
 
-            }
-            else{
-                echo "wrong";
-            }
+    } else {
+        echo "wrong";
+    }
 
     // $select = " SELECT * FROM user WHERE email = '$email's";
 
@@ -72,8 +72,7 @@ if (isset($_POST['submit'])) {
             <div id="menu-btn" class="fas fa-bars-staggered"></div>
 
             <!-- <a href="home.html" class="logo"><i class="fas fa-briefcase"></i>JobHunt.</a> -->
-            <a href="home.html"> <img src="images/logo1.png"
-                    class="logo"></a>
+            <a href="home.html"> <img src="images/logo1.png" class="logo"></a>
 
 
             <nav class="navbar">
@@ -97,13 +96,13 @@ if (isset($_POST['submit'])) {
         <section class="account-form">
             <form action="" method="post">
                 <h3>welcome back!</h3>
-                 <input type="text" required name="email" maxlength="50"
-                    placeholder="enter your email" class="input"> 
-                    <input type="password" required name="pass" maxlength="20" placeholder="enter your password" class="input">
+                <input type="text" required name="email" maxlength="50" placeholder="enter your email" class="input">
+                <input type="password" required name="pass" maxlength="20" placeholder="enter your password"
+                    class="input">
                 <p>don't have an account? <a href="register.php">register now</a></p> <input type="submit"
-                        value="login now" name="submit" class="btn">
+                    value="login now" name="submit" class="btn">
             </form>
-        </section> 
+        </section>
     </div>
 
 
